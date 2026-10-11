@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional haircuts and grooming at our barbershop.">
+    <title>Fresh Cuts | Barbershop</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">FRESH CUTS</a>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+
+        <!-- Home section -->
+        <section id="home">
+            <p>WELCOME TO FRESH CUTS</p>
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80"
+                alt="Interior of the Fresh Cuts barbershop" class="hero-image">
+            <h1>Look Sharp. Feel Confident.</h1>
+            <p>Professional cuts. Classic style. Your best look.</p>
+            <a href="#services">Explore Our Services</a>
+        </section>
+
+        <!-- About section -->
+        <section id="about">
+            <h2>More Than Just a Haircut</h2>
+            <p>
+                We combine skilled barbers, attention to detail,
+                and a welcoming atmosphere to give every client
+                a great grooming experience.
+            </p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <p class="section-tag">WHAT WE OFFER</p>
+
+            <h2>Our Premium Services</h2>
+
+            <p class="section-description">
+                From classic cuts to modern styles,
+                we've got your look covered.
+            </p>
+
+            <div class="services-container">
+
+                <div class="service-card">
+                    <h3>✂️ Classic Haircut</h3>
+                    <p>A clean, timeless cut tailored to you.</p>
+                    <span>150 ETB</span>
+                </div>
+
+                <div class="service-card">
+                    <h3>💈 Fade Haircut</h3>
+                    <p>Sharp fades with smooth blending.</p>
+                    <span>200 ETB</span>
+                </div>
+
+                <div class="service-card">
+                    <h3>🧔 Beard Trim</h3>
+                    <p>Keep your beard neat and well-shaped.</p>
+                    <span>100 ETB</span>
+                </div>
+
+                <div class="service-card">
+                    <h3>🔥 Haircut + Beard</h3>
+                    <p>A complete grooming experience.</p>
+                    <span>250 ETB</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <p class="section-tag">OUR WORK</p>
+            <h2>Fresh Cuts Gallery</h2>
+            <p class="section-description">
+                Clean cuts. Sharp fades. Fresh confidence.
+            </p>
+
+            <div class="gallery-container">
+                <img src="YOUR_FIRST_IMAGE_URL" alt="Classic haircut" loading="lazy">
+
+                <img src="YOUR_SECOND_IMAGE_URL" alt="Modern fade haircut" loading="lazy">
+
+                <img src="YOUR_THIRD_IMAGE_URL" alt="Professional barber styling hair" loading="lazy">
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact">
+            <p class="section-tag">GET IN TOUCH</p>
+            <h2>Book Your Fresh Cut</h2>
+            <p class="section-description">
+                Ready for a fresh look? Send us an appointment request.
+            </p>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Visit Fresh Cuts</h3>
+                    <p><strong>Location:</strong> Your city, Ethiopia</p>
+                    <p><strong>Phone:</strong> Add your business phone</p>
+                    <p><strong>Hours:</strong> Monday – Saturday</p>
+                </div>
+
+                <form id="booking-form">
+                    <label for="customer-name">Your Name</label>
+                    <input type="text" id="customer-name" placeholder="Enter your name" required>
+
+                    <label for="customer-phone">Phone Number</label>
+                    <input type="tel" id="customer-phone" placeholder="Enter your phone" required>
+
+                    <label for="service-choice">Choose a Service</label>
+                    <select id="service-choice" required>
+                        <option value="">Select a service</option>
+                        <option>Classic Haircut</option>
+                        <option>Fade Haircut</option>
+                        <option>Beard Trim</option>
+                        <option>Haircut + Beard</option>
+                    </select>
+
+                    <label for="appointment-date">Preferred Date</label>
+                    <input type="date" id="appointment-date" required>
+
+                    <button type="submit">Request Appointment</button>
+                    <p id="form-message" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Fresh Cuts Barbershop. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
